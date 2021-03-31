@@ -1,11 +1,22 @@
-// 这是一个调试测试文件，您可以直接运行检测配置是否生效
-// 若配置任然无法调试，请查阅README_inProject.md
+//essential中的练习题
+//include 引用声明
+#include <iostream>
+#include <string>
 
-#include <stdio.h>
-#include <stdlib.h>
-//在使用printf语句时候，/n只能输入英文字母
-int main() {
-    printf("This is my first c plus program and in this program i'll test is a sign can show in the sentence like \n");
-    system("pause");
+using namespace std;//声明使用std（名） std-standard，以namespace的方式使用std
+int main()
+{   
+    string user_firstname;//string 储存字符串
+	string user_lastname;
+    cout << "please enter your firstname: \n";
+	cin >> user_firstname;
+	cout << "please enter your lastname: \n";
+	cin >> user_lastname;
+    cout << '\n'
+        << "Hellow, "
+        << user_firstname
+		<< user_lastname
+        << " goodbye!\n";//在cout-cin中可以直接写空格
+		system("pause");
     return 0;
-} 
+}
