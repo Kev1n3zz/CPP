@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <fstream>
 //Pell Series(18),vector
 using namespace std; //在使用 complex、array、vector时，知道他们在namespace的std中
 
@@ -18,10 +19,16 @@ int main(){                 //不允许在函数外部给全局变量赋值
     {
         pell_seq[ix]=pell_seq[ix-2]+2*pell_seq[ix-1];
     }
-  
+
+    
+
     for (int ix = 0; ix < seq_size; ++ix)   //打印每个pell数
     {
+        
         cout << pell_seq[ix]<<' ';
+        ofstream outfile("pell.txt",ios_base::app);
+        outfile << pell_seq[ix]
+                <<' ';
         // cout << '\n';
     }
     system("pause") ;//在iostream中
