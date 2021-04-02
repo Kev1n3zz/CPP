@@ -28,7 +28,8 @@ int main(){                 //不允许在函数外部给全局变量赋值
         cout << pell_seq[ix]<<' ';
         ofstream outfile("pell.txt",ios_base::app);
         outfile << pell_seq[ix]
-                <<' ';
+                <<' '
+                <<'\n';
         // cout << '\n';
     }
     system("pause") ;//在iostream中
