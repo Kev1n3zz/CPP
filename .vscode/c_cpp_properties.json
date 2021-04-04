@@ -5,6 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C://include/*"
+
             ],
             "defines": [
                 "_DEBUG",
